@@ -27,7 +27,7 @@ Instead of waiting for the full tool call to be generated before checking its si
 
 ## Deliverables
 - Link to a video containing a demonstration of the working code
-- By email, or uploading to a GitHub repository, provide the following files:
+- Link to a GitHub repository, with the following files:
     - `tool_call.lark` - Lark grammar file for tool calls
     - `main.py` - Python script that uses Itergen to constrain LLM outputs based on the grammar
 
