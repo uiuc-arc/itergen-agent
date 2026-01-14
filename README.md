@@ -7,7 +7,6 @@ Create an LR grammar that describes tool calls in JSON syntax, and use it with I
 Two weeks
 
 ## Requirements
-- Lark parser (`pip install lark-parser`)
 - Itergen library (https://github.com/structuredllm/itergen)
 - Python 3.11+
 
@@ -24,6 +23,11 @@ Use reasonable defaults for hyperparameters like temperature, number of retries,
 
 ### (Bonus) Incremental checking
 Instead of waiting for the full tool call to be generated before checking its signature, check the type of each argument as it is generated. If an argument does not match the expected type, backtrack immediately and generate a new argument value.
+
+## Tips
+
+- Use Lark parser (`pip install lark-parser`) to debug the grammar you write for JSON. You can also use the Lark online IDE (https://www.lark-parser.org/ide/) to debug your grammar if you encounter any issues with it.
+- Refer to the Itergen documentation and the example in README.md for guidance on how to use it effectively. You might find example grammars in the SynCode repository (https://github.com/structuredllm/syncode) useful as references.
 
 ## Deliverables
 - Link to a video containing a demonstration of the working code
