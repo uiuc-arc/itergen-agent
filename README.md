@@ -1,7 +1,7 @@
 # Tool Calling Grammar for Constrained LLM Generation with Itergen
 
 ## Task Overview
-Create an LR grammar that describes tool calls in a commonly used syntax, and use it with Itergen to constrain the outputs of an LLM. This task demonstrates how formal grammars can be used to semantically constrain the output from LLMs.
+Create an LR grammar that describes tool calls in JSON syntax, and use it with Itergen to constrain the outputs of an LLM. This task demonstrates how formal grammars can be used to constrain the output from LLMs semantically.
 
 ## Timeframe
 Two weeks
