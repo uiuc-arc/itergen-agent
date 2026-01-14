@@ -16,7 +16,7 @@ Two weeks
 Create a Lark LALR(1) grammar that describes a tool call in the JSON format (e.g., `{"name": "tool_name", "args": {"arg1": "value1", "arg2": 42}}`). Note that the tool names could be any string, and the arguments can be of different types (string, integer, float, boolean, list, dictionary).
 
 ### 2. Use Itergen to constrain LLM outputs
-Use the above grammar with Itergen to constrain the outputs of an LLM (use a small Qwen3 model for testing). The LLM outputs should conform to the defined grammar. Use the scenarios and list of tools in tools.txt for testing. Ensure that the generated tool name is valid (a tool name is valid if it is present in the provided tool definitions).
+Use the above grammar with Itergen to constrain the outputs of an LLM (use a small Qwen3 model for testing). The LLM outputs should conform to the defined grammar. Use the scenarios and list of tools in tools.txt (from the same GitHub repository containing this README.md file) for testing. Ensure that the generated tool name is valid (a tool name is valid if it is present in the provided tool definitions).
 After a tool call is generated, check its signature (types of the arguments) against the tool definition in tools.txt. If the generated tool call does not obey the signature, backtrack and generate a new tool call (use the `backward`, `forward` calls in Itergen).
 Note that the tool call is not actually executed; only its generation and signature checking are required.
 Use reasonable defaults for hyperparameters like temperature, number of retries, etc. If you wish, you can try different hyperparameter settings and pick the best-performing one.
